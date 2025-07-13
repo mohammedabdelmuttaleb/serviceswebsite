@@ -116,25 +116,25 @@ nav a:hover {
 /* Service Cards */
 .cards {
     padding: 60px 0;
+    background: #F3F4F6;
 }
 
 .cards .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    max-width: 800px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .card {
     background: white;
-    padding: 60px 30px;
+    padding: 50px 20px;
     text-align: center;
     border: 2px solid #E5E7EB;
-}
-
-.card.orange {
-    background: #F97316;
-    color: white;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
 }
 
 .card .icon {
@@ -145,6 +145,22 @@ nav a:hover {
 .card h3 {
     font-size: 20px;
     font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card.orange {
+    background: #F97316;
+    color: white;
+    border: none;
+}
+
+.card.orange:hover {
+    background: #EA580C;
 }
 
 /* About */
@@ -339,6 +355,10 @@ footer {
     .hero {
         padding: 60px 0;
         text-align: center;
+    }
+
+    .card {
+        padding: 40px 20px;
     }
 
     .about,
